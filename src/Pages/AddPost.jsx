@@ -20,9 +20,10 @@ export default function AddPage() {
           })
           .then(console.log)
           .then(() => { setAdded(true), setbody(""), settitle("") })
-      }}>
+      }}
+      className='container back rounded p-2 mt-4'>
 
-        <div className='container mt-3'>
+        <div className='container mt-1'>
           <div className="mb-3">
             <label htmlFor="title" className="form-label">
               Title
@@ -50,9 +51,9 @@ export default function AddPage() {
           </div>
 
 
-          {/* <div className="mb-3">
+          <div className="mb-3">
           <label htmlFor="tags" className="form-label">
-            Tags
+            Add Tags
           </label>
           <input
             type="text"
@@ -60,11 +61,11 @@ export default function AddPage() {
             id="tags"
             placeholder="write your tags"
           />
-        </div> */}
+        </div>
 
 
           <div>
-            <button type='submit' className='btn btn-primary'>Add Post</button>
+            <button type='submit' className='btn btn-success opacity-75'>Add Post</button>
           </div>
         </div>
       </form>
